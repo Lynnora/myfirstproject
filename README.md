@@ -1,7 +1,5 @@
 # myfirstproject
 
-# myfirstproject
-
 # work flow
 
 ## Short version
