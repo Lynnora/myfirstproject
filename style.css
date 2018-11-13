@@ -1,3 +1,13 @@
 body {
   background-color: #00d9ff;
+  line-height: 2;
+  align-items: baseline;
+  padding-left: 10%;
+  padding-right:10%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.label {
+  font-weight: bold;
 }
