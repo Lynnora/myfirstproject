@@ -6,6 +6,7 @@ body {
   padding-right:10%;
   padding-top: 15%;
   padding-bottom: 15%;
+  font-face: verdana;
 }
 
 .label {
@@ -20,3 +21,8 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;}
+
+    input {
+      width: 100%;
+
+    }

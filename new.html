@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <font face=verdana;>
   <div>
 
 
@@ -19,14 +18,14 @@
     </div>
     <div>
 
-<form action="index.html" method="post" enctype="multipart/form-data">
+<form action="index.html" method="post">
 <p><label for="fontname" class="label">Font Name</label>
-  <input type="text" id="fontname" name="fontname" value="" placeholder="e.g. helvectica" style="width:100%;"></p>
+  <input required title="only upper and lowercase letters allowed" pattern="[A-Za-z]" type="text" id="fontname" name="fontname" value="" placeholder="e.g. helvectica"></p>
 
   <p><label for="foundry" class="label">Foundry</label>
-  <input type="text" id="foundry" name="foundry" value="" placeholder="linotype" style="width:100%;"></p>
+  <input required type="text" id="foundry" name="foundry" value="" placeholder="linotype"></p>
 
-  <label for="style-weight" class="label" style="width:100%;">Style-Weight</label>
+  <label for="style-weight" class="label">Style-Weight</label>
   <select  name="style-weight";>
     <option value="0">bold</option>
     <option value="1">regular</option>
@@ -34,17 +33,17 @@
     <option value="3">italic</option>
 </select>
 <p><label for="licensecount" class="label">License Count</label>
-<input type="number" id="licensecount" name="licensecount" style="width:10%;"></p>
+<input required class="licensecount" type="number" id="licensecount" name="licensecount" style="width:10%"></p>
 
-<p><label for="ponumber" class="label">P.O. Number</label>
-<input type="ponumber" name="ponumber" id="ponumber" style="width:30%;">
-<input type="submit" value="Upload Image" name="submit"></p>
+<p><label for="ponumber" class="label ponumber">P.O. Number</label>
+<input class="ponumber" type="ponumber" name="ponumber" id="ponumber" style="width:30%;">
+</p>
 
 <label for="requestedby" class="label">Requested By</label>
-<input type="text" id="requestedby" name="requested by" value="" placeholder="Joe Bloggs" style="width:100%" style="box-shadow:3;">
+<input type="text" id="requestedby" name="requested by" value="" placeholder="Joe Bloggs" style="box-shadow:3;">
 
 <label for="purchaser" class="label">Purchaser</label>
-<input type="text" id="purchaser" name="purchaser" value="" style="width:100%;">
+<input type="text" id="purchaser" name="purchaser" value="">
 
 <button class="button" name="submit" type="submit">
   submit
