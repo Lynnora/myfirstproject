@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
   </head>
   <body>
   <div>
@@ -20,19 +21,22 @@
 
 <form action="index.html" method="post">
 <p><label for="fontname" class="label">Font Name</label>
-  <input required title="only upper and lowercase letters allowed" pattern="[A-Za-z]" type="text" id="fontname" name="fontname" value="" placeholder="e.g. helvectica"></p>
-
+  <span class="required">*</span>
+  <input required type="text" pattern="[A-Za-z0-9-]+" id="fontname" name="fontname" value="" placeholder="e.g. helvectica"></p>
   <p><label for="foundry" class="label">Foundry</label>
-  <input required type="text" id="foundry" name="foundry" value="" placeholder="linotype"></p>
+    <span class="required">*</span>
+  <input required type="text" id="foundry" name="foundry" value="" placeholder="e.g.linotype"></p>
 
   <label for="style-weight" class="label">Style-Weight</label>
-  <select  name="style-weight";>
+  <span class="required">*</span>
+  <select  required name="style-weight";>
     <option value="0">bold</option>
     <option value="1">regular</option>
     <option value="2">light</option>
     <option value="3">italic</option>
 </select>
 <p><label for="licensecount" class="label">License Count</label>
+  <span class="required">*</span>
 <input required class="licensecount" type="number" id="licensecount" name="licensecount" style="width:10%"></p>
 
 <p><label for="ponumber" class="label ponumber">P.O. Number</label>
@@ -40,10 +44,12 @@
 </p>
 
 <label for="requestedby" class="label">Requested By</label>
-<input type="text" id="requestedby" name="requested by" value="" placeholder="Joe Bloggs" style="box-shadow:3;">
+<span class="required">*</span>
+<input required type="text" id="requestedby" name="requested by" value="" placeholder="Joe Bloggs">
 
 <label for="purchaser" class="label">Purchaser</label>
-<input type="text" id="purchaser" name="purchaser" value="">
+<span class="required">*</span>
+<input required type="text" id="purchaser" name="purchaser" value="">
 
 <button class="button" name="submit" type="submit">
   submit
