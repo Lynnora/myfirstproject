@@ -6,7 +6,7 @@ body {
   padding-right:10%;
   padding-top: 15%;
   padding-bottom: 15%;
-  font-face: verdana;
+  font-family: 'Crete Round', serif;
 }
 
 .label {
@@ -17,8 +17,7 @@ body {
     border: none;
     color: white;
     padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
+    text-align: center
     display: inline-block;
     font-size: 16px;}
 
