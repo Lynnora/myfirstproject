@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title></title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   </head>
   <body>
   <div>
@@ -22,13 +22,14 @@
 <form action="index.html" method="post">
 <p><label for="fontname" class="label">Font Name</label>
   <span class="required">*</span>
-feature/PF-eYSwgcK0
-  <input required type="text" pattern="[A-Za-z0-9-]+" id="fontname" name="fontname" value="" placeholder="e.g. helvectica"></p>
 
-master
+  <input required type="text" pattern="[A-Za-z0-9-]+" id="fontname" name="fontname" value="" placeholder="e.g. helvectica" style=width:100%></p>
+  <input required title="Compress and upload all realated fonts" type="file">
+  <span class="required">*</span></p>
+
   <p><label for="foundry" class="label">Foundry</label>
     <span class="required">*</span>
-  <input required type="text" id="foundry" name="foundry" value="" placeholder="e.g.linotype"></p>
+  <input required type="text" id="foundry" name="foundry" value="" placeholder="e.g.linotype" style=width:100%></p>
 
   <label for="style-weight" class="label">Style-Weight</label>
   <span class="required">*</span>
@@ -43,16 +44,18 @@ master
 <input required class="licensecount" type="number" id="licensecount" name="licensecount" style="width:10%"></p>
 
 <p><label for="ponumber" class="label ponumber">P.O. Number</label>
-<input class="ponumber" type="ponumber" name="ponumber" id="ponumber" style="width:30%;">
-</p>
+<input class="ponumber" type="ponumber" name="ponumber" id="ponumber" style="width:30%">
+
+<input required title="Upload all realated receipts" type="file">
+<span class="required">*</span></p>
 
 <label for="requestedby" class="label">Requested By</label>
 <span class="required">*</span>
-<input required type="text" id="requestedby" name="requested by" value="" placeholder="Joe Bloggs">
+<input required type="text" id="requestedby" name="requested by" value="" placeholder="Joe Bloggs" style=width:100%>
 
 <label for="purchaser" class="label">Purchaser</label>
 <span class="required">*</span>
-<input required type="text" id="purchaser" name="purchaser" value="">
+<input required type="text" id="purchaser" name="purchaser" value="" style=width:100%>
 
 <button class="button" name="submit" type="submit">
   submit
